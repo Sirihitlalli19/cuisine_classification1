@@ -1,0 +1,23 @@
+# Cuisine Classification Project
+
+## 📌 Project Summary
+This project predicts restaurant cuisines using a **multi-label classification model**.  
+It uses the dataset stored in **Data/restaurant_data.csv** and generates evaluation results and plots in **Output/**.
+
+The model predicts the **top 15 cuisines** based on features like average cost, ratings, delivery options, and engineered features such as restaurant name length. It uses **XGBoost with OneVsRestClassifier**, along with **oversampling for minority cuisines** and **threshold tuning** to optimize precision and recall.
+
+## 📂 Folder Structure
+- **Data/** → contains dataset (`restaurant_data.csv`)  
+- **Code/** → contains main Python script (`main.py`)  
+- **Output/** → contains results and plots (`True vs Predicted Counts per Cuisine.png`)  
+- **requirements.txt** → Python dependencies  
+- **README.md** → this file  
+
+## 🚀 How to Run
+1. Install Python 3.11 (recommended).  
+2. Open terminal/command prompt inside the project folder.  
+3. Install required libraries:
+   ```bash
+   pip install -r requirements.txt
+4.Run the main script 
+```bashpython code/main.py
